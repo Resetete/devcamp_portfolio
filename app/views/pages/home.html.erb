@@ -2,5 +2,9 @@
 <p>Find me in app/views/pages/home.html.erb</p>
 
 <% @posts.each do |post| %>
-  <%= post.inspect %>
+  <%= post.title %>   <%= post.body %> <br>
+<% end %>
+
+<% @skills.each do |skill| %>
+  <%= skill.title %>  <%= skill.percent_utilized %> <br>
 <% end %>
