@@ -1,3 +1,1 @@
-# README
-
-Udemy Course DevCamp Portfolio App
+# Udemy Course DevCamp Portfolio App
