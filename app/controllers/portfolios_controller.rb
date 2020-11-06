@@ -1,4 +1,6 @@
 class PortfoliosController < ApplicationController
+  before_action :find_portfolio_item, only: [:edit, :update]
+
   def index
     @portfolio_items = Portfolio.all
   end
@@ -18,9 +20,26 @@ class PortfoliosController < ApplicationController
     end
   end
 
+  def edit
+  end
+
+  def update
+    respond_to do |format|
+      if @portfolio_item.update(portfolio_params)
+        format.html { redirect_to portfolios_path, notice: 'You updated the portfolio item' }
+      else
+        format.html { render :edit }
+      end
+    end
+  end
+
   private
 
   def portfolio_params
     params.require('portfolio').permit(:title, :subtitle, :body)
+  end
+
+  def find_portfolio_item
+    @portfolio_item = Portfolio.find(params[:id])
   end
 end
