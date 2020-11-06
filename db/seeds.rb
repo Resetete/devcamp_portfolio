@@ -30,8 +30,8 @@ puts "5 skills created"
     title: "Portfolio item #{portfolio_item}",
     subtitle: "Subtitle item #{portfolio_item}",
     body: "t vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omni",
-    main_image: "https://placeholder.com/550x750",
-    thumb_image: "https://placeholder.com/350x150"
+    main_image: "https://via.placeholder.com/450",
+    thumb_image: "https://via.placeholder.com/150"
 )
 end
 
