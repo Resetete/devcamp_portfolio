@@ -5,6 +5,10 @@ class PortfoliosController < ApplicationController
     @portfolio_items = Portfolio.all
   end
 
+  def html_css
+    @html_css_items = Portfolio.html_css_items_only
+  end
+
   def show
   end
 
