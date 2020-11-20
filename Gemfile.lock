@@ -1,3 +1,9 @@
+GIT
+  remote: https://github.com/Resetete/view_tool_theresa
+  revision: b81f9fa02f2d63f88289158a3901c607f918eb8e
+  specs:
+    view_tool_theresa (0.1.0)
+
 GEM
   remote: https://rubygems.org/
   specs:
@@ -221,6 +227,7 @@ DEPENDENCIES
   spring-watcher-listen (~> 2.0.0)
   turbolinks (~> 5)
   tzinfo-data
+  view_tool_theresa!
   web-console (>= 3.3.0)
   webpacker (~> 4.0)
 

@@ -49,3 +49,4 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'friendly_id', '~> 5.4.0'
 gem 'devise'
 gem 'bootstrap'
+gem 'view_tool_theresa', git: 'https://github.com/Resetete/view_tool_theresa'
