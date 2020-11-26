@@ -1,4 +1,15 @@
-<h1>Pages#contact</h1>
+<h1>Would you like to work with me?</h1>
 
-
-<p> <%= number_to_phone('015124045227', area_code: true, country_code: 49) %></p>
+<div class="row">
+  <div class="col-md-6">
+    <h3> Address </h3>
+      <p> Wilmersdorf, Berlin, Germany </p>
+    <h3> Phone </h3>
+      <p> <%= number_to_phone('015124045227', area_code: true, country_code: 49) %></p>
+    <h3> Mail </h3>
+      <%= link_to 'contact(at)theresamannschatz.design', 'mailto:rese_m@web.de?subject=PortfolioContact'%>
+  </div>
+  <div class="col-md-6">
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d19437.8133931172!2d13.300886969121784!3d52.4840844013182!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47a850927774b673%3A0x52120465b5facb0!2sWilmersdorf%2C%20Berlin!5e0!3m2!1sde!2sde!4v1606389279961!5m2!1sde!2sde" width="450" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+  </div>
+</div>
