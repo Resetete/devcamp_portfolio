@@ -87,7 +87,6 @@ body {
   }
 }
 
-
 /*
  * Cover
  */
@@ -99,10 +98,21 @@ body {
   font-weight: 700;
 }
 
-
 /*
  * Footer
  */
 .mastfoot {
   color: rgba(255, 255, 255, .5);
+}
+
+/***********************/
+/** CUSTOM STYLES *****/
+/***********************/
+
+.card-body {
+  color: black;
+}
+
+.auth-links a {
+  color: black;
 }
