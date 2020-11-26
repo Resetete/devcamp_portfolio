@@ -18,17 +18,12 @@
       <p class="notice"> <%= notice %> </p>
       <p class="alert"> <%= alert %> </p>
 
-      <header class="masthead mb-auto">
-        <%= render 'shared/application_navbar' %>
-        <%= login_helper %>
-      </header>
+      <%= render 'shared/application_navbar' %>
 
       <%= yield %>
-
       <%= source_helper('blog') %>
+
+      <%= render 'shared/footer' %>
     </div>
-
   </body>
-
-  <%= render 'shared/footer' %>
 </html>
