@@ -1,8 +1,5 @@
 <div class="col-md-8 blog-main">
-
-
-   <%= render @blogs %>
-
+  <%= render @blogs %>
 
   <nav class="blog-pagination">
     <a class="btn btn-outline-primary" href="#">Older</a>
@@ -10,12 +7,4 @@
   </nav>
 </div>
 
-
-
-
-
-
 <p id="notice"><%= notice %></p>
-
-
-<%= link_to 'New Blog', new_blog_path if logged_in?(:site_admin) %>
