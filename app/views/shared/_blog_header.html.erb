@@ -1,0 +1,4 @@
+<div class="col-4 text-left">
+  <%= link_to 'My Blog', blogs_path, class: 'blog-header-logo text-dark' %>
+  <%= link_to 'Write a new Blog', new_blog_path if logged_in?(:site_admin) %>
+</div>
