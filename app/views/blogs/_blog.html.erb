@@ -7,10 +7,9 @@
     <p class="blog-post-meta">
       <%= link_to blog.status.capitalize, toggle_status_blog_path(blog) %> |
       <%= link_to 'Edit', edit_blog_path(blog) %> |
-      <%= link_to 'Destroy', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= link_to 'Delete post', blog, method: :delete, data: { confirm: 'Are you sure?' } %>
     </p>
   <% end %>
-
 
   <p> <%= blog.body %> </p>
 </div>
