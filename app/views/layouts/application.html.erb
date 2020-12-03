@@ -6,9 +6,7 @@
     <%= csp_meta_tag %>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"
-
     <meta name='keywords' content="<%= @seo_keywords %>"/>
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
@@ -19,11 +17,16 @@
       <p class="alert"> <%= alert %> </p>
 
       <%= render 'shared/application_navbar' %>
+      <div class="mb-auto mt-auto">
+        <%= yield %>
+        <%= source_helper('blog') %>
+      </div>
 
-      <%= yield %>
-      <%= source_helper('blog') %>
-
-      <%= render 'shared/footer' %>
+      <div class="row">
+        <div class="col-md-12 text-center">
+          <%= render 'shared/footer' %>
+        </div>
+      </div>
     </div>
   </body>
 </html>

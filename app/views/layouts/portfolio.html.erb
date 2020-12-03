@@ -13,11 +13,10 @@
   </head>
 
   <body>
-    <p class="notice"> <%= notice %> </p>
-    <p class="alert"> <%= alert %> </p>
-
     <%= render 'shared/portfolio_navbar' %>
-    <%= render 'shared/portfolio_masthead' unless logged_in?(:site_admin) %>
+    <%= render 'shared/messages' %>   
+
+    <%= render 'shared/portfolio_masthead' %>
 
     <main role="main">
       <%= yield %>
