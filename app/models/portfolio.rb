@@ -9,6 +9,10 @@ class Portfolio < ApplicationRecord
     where(subtitle: 'HTML & CSS')
   end
 
+  def self.by_position
+    order('position ASC')
+  end
+
   scope :html_css_items_only, -> { where(subtitle: 'HTML & CSS') }
 
   after_initialize :set_defaults
