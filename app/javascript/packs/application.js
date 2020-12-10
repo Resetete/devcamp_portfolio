@@ -7,7 +7,7 @@
 require('jquery')
 require("@rails/ujs").start()
 require("jquery-ui")
-require("packs/html_sortable")
+require("packs/html.sortable")
 require("turbolinks").start()
 require("@rails/activestorage").start()
 require("channels")
@@ -21,3 +21,11 @@ require("channels")
 // const imagePath = (name) => images(name, true)
 import "@fortawesome/fontawesome-free/js/all";
 import "bootstrap";
+import "jquery-ui"
+
+ 
+$(
+        () => {
+                $('.sortable').sortable()
+        }
+)
