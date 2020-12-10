@@ -23,9 +23,9 @@ import "@fortawesome/fontawesome-free/js/all";
 import "bootstrap";
 import "jquery-ui"
 
- 
+// Drag and Drop functionality
 $(
-        () => {
-                $('.sortable').sortable()
-        }
+  () => {
+    $('.sortable').sortable()
+  }
 )
