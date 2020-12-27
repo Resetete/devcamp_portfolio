@@ -14,7 +14,7 @@
         <p> <%= technology.name %> </p>
       <% end %>
 
-      <%= link_to 'Edit', edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' if logged_in?(:site_admin) %>
+      <%= link_to 'Edit item', edit_portfolio_path(@portfolio_item), class: 'btn btn-primary' if logged_in?(:site_admin) %>
     </div>
 
   </div>
