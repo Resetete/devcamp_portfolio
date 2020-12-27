@@ -7,6 +7,7 @@
 require('jquery')
 require("@rails/ujs").start()
 require("jquery-ui")
+require("@nathanvda/cocoon")
 require("packs/html.sortable")
 require("turbolinks").start()
 require("@rails/activestorage").start()
