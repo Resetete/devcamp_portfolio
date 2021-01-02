@@ -55,6 +55,7 @@ gem 'fontawesome-rails', '~> 4.0', '>= 4.0.3.2'
 gem 'font_awesome5_rails'
 gem 'kaminari', '~> 1.2', '>= 1.2.1'
 gem 'jquery-ui-rails', '~> 6.0', '>= 6.0.1'
+gem 'jquery-rails'
 # image uploading and manipulation
 gem 'carrierwave', '~> 2.1'
 gem 'mini_magick', '~> 4.11'
