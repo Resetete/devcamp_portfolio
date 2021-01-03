@@ -6,8 +6,10 @@ let ready = () => {
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
-        timer: 3000,
+        timer: 1000,
         showConfirmButton: false,
+        background: '#000',
+        padding: '5px',
         timerProgressBar: true,
         onOpen: (toast) => {
             toast.addEventListener('mouseenter', Swal.stopTimer);
