@@ -35,5 +35,5 @@
 yarn-debug.log*
 .yarn-integrity
 
-# Ignore file storage cloud serice credentials
+# Ignore file storage cloud service credentials
 .env

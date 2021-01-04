@@ -1,17 +1,13 @@
 module SocialTool
   def self.twitter_search
-    require 'open-uri'
-
-    url = 'http://newsapi.org/v2/everything?'\
-      'q=Apple&'\
-      'from=2021-01-04&'\
-      'sortBy=popularity&'\
-      'apiKey=436d0a5ee58b45339f8844a6aad2d567'
-
-    req = open(url)
-
-    response_body = req.read
-
-    puts response_body
+    newsapi = News.new(ENV.fetch(news_api_key))
+    all_articles = newsapi.get_everything(q: 'bitcoin',
+                                          sources: 'bbc-news,the-verge',
+                                          domains: 'bbc.co.uk,techcrunch.com',
+                                          from: '2019-12-01',
+                                          to: '2020-01-31',
+                                          language: 'en',
+                                          sortBy: 'relevancy',
+                                          page: 2))
   end
 end
