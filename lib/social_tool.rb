@@ -1,13 +1,16 @@
 module SocialTool
-  def self.twitter_search
-    newsapi = News.new(ENV.fetch(news_api_key))
-    all_articles = newsapi.get_everything(q: 'bitcoin',
-                                          sources: 'bbc-news,the-verge',
-                                          domains: 'bbc.co.uk,techcrunch.com',
-                                          from: '2019-12-01',
-                                          to: '2020-01-31',
+  def self.news_search(query)
+    newsapi = News.new(ENV.fetch('NEWS_API_KEY'))
+    all_articles = newsapi.get_everything(q: query,
+                                          #sources: 'bbc-news,the-verge',
+                                          #domains: 'bbc.co.uk,techcrunch.com',
+                                          from: (DateTime.now - 20.days).strftime('%Y-%m-%d'),
+                                          to: DateTime.now.strftime('%Y-%m-%d'),
                                           language: 'en',
                                           sortBy: 'relevancy',
-                                          page: 2))
+                                          page: 2)
+    all_articles.take(6).collect do |news_article|
+      news_info = news_article.name + news_article.url 
+    end
   end
 end
