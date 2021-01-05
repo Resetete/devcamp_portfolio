@@ -10,4 +10,8 @@ class PagesController < ApplicationController
     @skills = Skill.all
     @page_title = "#{current_user.first_name}'s Portfolio Website"
   end
+
+  def tech_news
+    @news = SocialTool.news_search('bitcoin')
+  end
 end
