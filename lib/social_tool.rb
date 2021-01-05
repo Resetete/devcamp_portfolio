@@ -10,7 +10,7 @@ module SocialTool
                                           sortBy: 'relevancy',
                                           page: 2)
     all_articles.take(6).collect do |news_article|
-      news_info = news_article.name + news_article.url 
+      "#{news_article.title} by #{news_article.author} #{news_article.name} #{news_article.description} #{news_article.url}. #{news_article.publishedAt}"
     end
   end
 end
