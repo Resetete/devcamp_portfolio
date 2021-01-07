@@ -12,6 +12,6 @@ class PagesController < ApplicationController
   end
 
   def tech_news
-    @news = SocialTool.news_search('bitcoin')
+    @news = SocialTool.news_search('ruby on rails')
   end
 end
