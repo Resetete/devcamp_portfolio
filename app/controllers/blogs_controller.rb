@@ -15,7 +15,7 @@ class BlogsController < ApplicationController
   # GET /blogs
   # GET /blogs.json
   def index
-    @blogs = Blog.page(params[:page]).per(5)
+    @blogs = Blog.newest_first.page(params[:page]).per(5)
     @page_title = 'My Portfolio Blog'
   end
 
@@ -81,6 +81,6 @@ class BlogsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def blog_params
-      params.require(:blog).permit(:title, :body)
+      params.require(:blog).permit(:title, :body, :topic)
     end
 end
