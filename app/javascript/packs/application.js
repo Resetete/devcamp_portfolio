@@ -25,6 +25,7 @@ import "bootstrap"
 import "jquery-ui"
 import "jquery"
 import 'packs/portfolios'
+import 'channels/blogs'
 import 'sweetalert2'
 
 // Drag and Drop functionality
