@@ -2,6 +2,7 @@
 
   <h2 class="blog-post-title"> <%= link_to blog.title.upcase, blog %> </h2>
   <p class="blog-post-meta"> Published <%= time_ago_in_words(blog.created_at) %> ago </p>
+  <p class="badge badge-info"> <%= blog.topic.title %> </p>
 
   <% if logged_in?(:site_admin) %>
     <p class="blog-post-meta">

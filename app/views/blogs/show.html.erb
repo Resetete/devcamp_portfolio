@@ -1,6 +1,6 @@
 <div class="col-md-8 blog-main">
   <h2> <%= @blog.title %> </h2>
-  <p> <%= @blog.topic.title %> </p>
+  <div class="badge badge-primary mb-3"> <%= @blog.topic.title %> </div>
 
   <%= link_to 'Edit', edit_blog_path(@blog) if logged_in?(:site_admin) %>
 
