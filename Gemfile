@@ -61,5 +61,9 @@ gem 'mini_magick', '~> 4.11'
 gem 'carrierwave-aws', '~> 1.5'
 gem 'dotenv-rails', '~> 2.7', '>= 2.7.6'
 gem 'cocoon', '~> 1.2', '>= 1.2.15'
+# news gem
 gem 'news-api', '~> 0.2.0'
 gem 'redis', '~> 4.2', '>= 4.2.5'
+# markdown and syntax highlighting
+gem 'redcarpet', '~> 3.5', '>= 3.5.1'
+gem 'coderay', '~> 1.1', '>= 1.1.3'
