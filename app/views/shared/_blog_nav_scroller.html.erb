@@ -1,11 +1,7 @@
 <div class="nav-scroller py-1 mb-5">
   <nav class="nav d-flex justify-content-between">
-    <a class="p-2 text-muted" href="#">HTML</a>
-    <a class="p-2 text-muted" href="#">CSS / SCSS </a>
-    <a class="p-2 text-muted" href="#">Ruby</a>
-    <a class="p-2 text-muted" href="#">Rails</a>
-    <a class="p-2 text-muted" href="#">Panicking</a>
-    <a class="p-2 text-muted" href="#">Remote work</a>
-    <a class="p-2 text-muted" href="#">Other</a>
+    <% most_popular_topics_helper.each do |topic_id|  %>
+      <%= link_to topic_name_helper(topic_id), topic_path(topic_id), class: "p-2 text-muted" %>
+    <% end %>
   </nav>
 </div>
