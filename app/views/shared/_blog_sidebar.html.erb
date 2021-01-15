@@ -4,7 +4,14 @@
     <p class="mb-0">Welcome to my blog 'my way into coding'. I am a <em>Quereinsteiger</em> and started with coding in 2018 during parental leave of our first child. I would like to document and share my thoughts and learnings on my way to become a professional full-stack developer.</p>
   </div>
 
-<div class="p-4">
+  <div class="p-4">
+    <h4 class="font-italic">Topics</h4>
+    <% @sidebar_topics.each do |topic| %>
+      <p> <%= link_to topic.title, topic_path(topic.id) %> </p>
+    <% end %>
+  </div>
+
+  <div class="p-4">
     <h4 class="font-italic">Elsewhere</h4>
     <ol class="list-unstyled social-media-links">
       <li> <%= link_to "#{fab_icon 'github'}".html_safe, 'https://github.com/Resetete' %> </li>

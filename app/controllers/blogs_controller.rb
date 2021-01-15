@@ -1,5 +1,6 @@
 class BlogsController < ApplicationController
   before_action :set_blog, only: [:show, :edit, :update, :destroy, :toggle_status]
+  before_action :set_sidebar_topics, except: [:toggle_status, :update, :destroy, :create]
   layout 'blog'
   access all: [:show, :index], site_admin: :all, user: { except: [:destroy, :new, :create, :update, :edit, :toggle_status]}
 
@@ -82,13 +83,15 @@ class BlogsController < ApplicationController
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
     def set_blog
       @blog = Blog.friendly.find(params[:id])
     end
 
-    # Only allow a list of trusted parameters through.
     def blog_params
       params.require(:blog).permit(:title, :body, :topic_id)
+    end
+
+    def set_sidebar_topics
+      @set_sidebar_topics = Topic.with_blogs
     end
 end
