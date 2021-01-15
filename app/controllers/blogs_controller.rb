@@ -88,10 +88,10 @@ class BlogsController < ApplicationController
     end
 
     def blog_params
-      params.require(:blog).permit(:title, :body, :topic_id)
+      params.require(:blog).permit(:title, :body, :topic_id, :status)
     end
 
     def set_sidebar_topics
-      @set_sidebar_topics = Topic.with_blogs
+      @sidebar_topics = Topic.with_blogs
     end
 end
