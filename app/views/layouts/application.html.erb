@@ -25,12 +25,11 @@
       <%= render 'shared/application_navbar' %>
       <div class="mb-auto mt-auto text-center">
         <%= yield %>
-        <%= source_helper('blog') %>
       </div>
 
       <div class="row">
         <div class="col-md-12 text-center">
-          <%= render 'shared/footer' %>
+          <%= render partial: 'shared/footer', locals: { styles: 'application-footer' } %>
         </div>
       </div>
     </div>

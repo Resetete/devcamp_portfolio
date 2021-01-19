@@ -169,8 +169,23 @@ body {
 
 .app-card-container > .card  {
     padding-top: 20px;
+    margin-bottom: 50px;
 }
 
 .app-card-container a {
   color: blue;
+}
+
+.card-block {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: none;
+  padding: 5px;
+}
+
+.application-footer {
+  color: white;
+  a {
+    color: white;
+  }
 }
