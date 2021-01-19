@@ -4,6 +4,15 @@
 @import "bootstrap";
 @import "jquery-ui";
 
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  font-family: 'Roboto Slab', serif;
+}
+
 .jumbotron {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -27,15 +36,6 @@
 
 .jumbotron .container {
   max-width: 40rem;
-}
-
-footer {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
-
-footer p {
-  margin-bottom: .25rem;
 }
 
 /********************/
