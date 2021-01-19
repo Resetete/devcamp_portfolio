@@ -3,6 +3,23 @@
     <div class="row">
       <div class="col-md-4">
         <%= image_tag('profile.jpg', alt: 'profile image of portfolio owner', width: '100%') %>
+      <div>
+        <div class="skills">
+          <% @skills.each do |skill| %>
+          <h4> <%= skill.title %> </h4>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped bg-warning"
+                 role="progressbar"
+                 aria-valuenow=<%= skill.percent_utilized %>
+                 aria-valuemax="100"
+                 style="width: <%= skill.percent_utilized %>%"
+                >
+            </div>
+          </div>
+        <% end %>
+       </div>
+      </div>
+
       </div>
       <div class="col-md-8">
         <h1>I am Theresa, a <em>Quer</em>einsteiger full-stack developer using <small>Ruby on Rails</small> and <small>HTML5/CSS</small> with a bit of <small>Javascript</small></h1>
