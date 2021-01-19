@@ -157,3 +157,20 @@ body {
   padding: 30px;
   margin: 10px;
 }
+
+.app-card-container {
+  color: black;
+  text-shadow: none;
+}
+
+.app-card-container > .card > .row {
+    margin: 20px;
+}
+
+.app-card-container > .card  {
+    padding-top: 20px;
+}
+
+.app-card-container a {
+  color: blue;
+}
