@@ -21,12 +21,13 @@ require("channels")
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
 import "@fortawesome/fontawesome-free/js/all"
-import "bootstrap"
 import "jquery-ui"
 import "jquery"
 import 'packs/portfolios'
 import 'channels/blogs'
 import 'sweetalert2'
+import "bootstrap"
+
 
 // Drag and Drop functionality
 $(
