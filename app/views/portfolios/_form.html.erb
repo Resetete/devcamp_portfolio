@@ -47,7 +47,11 @@
   <%= link_to_add_association 'Add Technology', f, :technologies %>
 </div>
 
-<div class="actions">
+<div class="mt-3">
+  <%= render partial: 'shared/admin_action_icons', locals: { object: @portfolio_item, edit_path: edit_portfolio_path(@portfolio_item) } %>
+</div>
+
+<div class="actions mt-3">
   <%= f.submit 'Save portfolio item', class: 'btn btn-primary btn-block' %>
 </div>
 

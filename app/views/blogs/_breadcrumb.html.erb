@@ -3,5 +3,5 @@
     <%= link_to @blog.topic.title, topic_path(@blog.topic), class: "breadcrumb-item" %>
     <span class="breadcrumb-item active"> <%= @blog.title %> </span>
 
-  <%= render 'shared/admin_action_icons'%>
+  <%= render partial: 'shared/admin_action_icons', locals: { object: @blog, edit_path: edit_blog_path(@blog) } %>
 </nav>
