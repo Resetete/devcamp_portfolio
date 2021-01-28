@@ -14,7 +14,7 @@
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= favicon_link_tag 'favicons/favicon.ico' %>
-    <% if.Rails.env.production? %>
+    <% if Rails.env.production? %>
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-K8CS3TDTTP"></script>
       <script>
         window.dataLayer = window.dataLayer || [];
