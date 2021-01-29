@@ -19,7 +19,7 @@ jQuery(document).on('turbolinks:load', function() {
       comments.append(data['comment']);
     },
     send_comment(comment, blog_id) {
-      console.log('Blog_id:')
+      console.log('Blog_id:');
       console.log(blog_id);
       this.perform('send_comment', {comment, blog_id});
    }
