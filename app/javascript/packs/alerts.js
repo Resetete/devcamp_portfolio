@@ -6,7 +6,7 @@ let ready = () => {
     const Toast = Swal.mixin({
         toast: true,
         position: 'top-end',
-        timer: 1000,
+        timer: 5000,
         showConfirmButton: false,
         background: '#000',
         padding: '5px',
